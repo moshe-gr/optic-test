@@ -1,0 +1,21 @@
+<form class="container" #myForm="ngForm">
+    <div class="row my-5">
+        <div class="col">
+            <input #r type="text" class="form-control" placeholder="Right">
+        </div>
+        <div class="col">
+            <input #l type="text" class="form-control" placeholder="Left">
+        </div>
+    </div>
+    <div class="row my-5">
+        <div class="col">
+            <input #rc type="text" class="form-control" placeholder="Right cylinder">
+        </div>
+        <div class="col">
+            <input #lc type="text" class="form-control" placeholder="Left cylinder">
+        </div>
+    </div>
+    <div class="col-12">
+        <button (click)="finalOrder({r: r.value, l: l.value, rc: rc.value, lc: lc.value})" type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
