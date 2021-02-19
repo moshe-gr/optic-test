@@ -16,8 +16,9 @@ export class GlassesComponent implements OnInit {
   ngOnInit(): void {
   }
   confirm(): void{
-    this.orderInfo.orderInfo.isbn = this.glasses.isbn;
-    this.orderInfo.orderInfo.pic = this.glasses.pic;
+    window.localStorage.setItem('glasses', JSON.stringify({'isbn': this.glasses.isbn, 'pic': this.glasses.pic}));
+    // this.orderInfo.orderInfo.isbn = this.glasses.isbn;
+    // this.orderInfo.orderInfo.pic = this.glasses.pic;
   }
 
 }

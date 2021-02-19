@@ -26,7 +26,18 @@ export class FinalComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.final = this.orderInfo.orderInfo;
+    this.final = {
+      isbn: JSON.parse(window.localStorage.getItem('glasses')).isbn,
+      pic: JSON.parse(window.localStorage.getItem('glasses')).pic,
+      type: window.localStorage.getItem('type'),
+      lense: {
+        r: JSON.parse(window.localStorage.getItem('lense')).r,
+        l: JSON.parse(window.localStorage.getItem('lense')).l,
+        lc: JSON.parse(window.localStorage.getItem('lense')).lc,
+        rc: JSON.parse(window.localStorage.getItem('lense')).rc
+      }
+    }
+    // this.final = this.orderInfo.orderInfo;
   }
 
 }

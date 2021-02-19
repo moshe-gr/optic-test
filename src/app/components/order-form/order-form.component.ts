@@ -14,8 +14,9 @@ export class OrderFormComponent implements OnInit {
   ngOnInit(): void {
   }
   finalOrder(lense: object): void{
-    this.orderInfo.orderInfo.lense = lense
-    this.router.navigate(["/final"])
+    window.localStorage.setItem('lense', JSON.stringify(lense));
+    // this.orderInfo.orderInfo.lense = lense;
+    this.router.navigate(["/final"]);
   }
 
 }

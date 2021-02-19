@@ -6,18 +6,18 @@ import { OrderInfoModel } from '../models/order-info-model';
 })
 export class OrderInfoService {
 
-  orderInfo: OrderInfoModel;
+  // orderInfo: OrderInfoModel;
   constructor() {
-    this.orderInfo = {
-      isbn: null,
-      pic: null,
-      type: null,
-      lense: {
-        l: null,
-        r: null,
-        lc: null,
-        rc: null
-      }
-    }
+    // this.orderInfo = {
+    //   isbn: null,
+    //   pic: null,
+    //   type: null,
+    //   lense: {
+    //     l: null,
+    //     r: null,
+    //     lc: null,
+    //     rc: null
+    //   }
+    // }
   }
 }

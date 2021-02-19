@@ -13,7 +13,8 @@ export class TypeComponent implements OnInit {
   ngOnInit(): void {
   }
   confirm(type: string): void{
-    this.orderInfo.orderInfo.type = type
+    window.localStorage.setItem('type', type);
+    // this.orderInfo.orderInfo.type = type;
   }
 
 }
